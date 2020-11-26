@@ -3,31 +3,7 @@
 This repository is a small tutorial which explains how to integrate stripe using Symfony 5 project
 and how to accept payments with Stripe
 
-##### RUN PROJECT DOCKER
-
-```
-docker-compose build
-docker-compose up    // voir les logs
-docker-compose up -d // lancer les container sans les logs
-```
-
-If the containers are already created:
-
-```
-make start
-
-> set your admin password
-```
-
-##### RUN DOCKER PHP CONTAINER 
-
-```
-make php_container
-
-> set your admin password
-```
-
-##### CREATE DATABASE IF NOT EXIST 
+##### CREATE DATABASE IF EXIST 
 
 ```
 php app/console doctrine:database:create --if-not-exists
